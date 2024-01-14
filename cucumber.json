@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-05T10:46:40.530Z",
+        "start_timestamp": "2024-01-14T20:19:48.551Z",
         "line": 4,
         "name": "Option to book a room is available on the page",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9880000000,
+              "duration": 8019000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 70000000,
               "status": "passed"
             },
             "line": 6,
@@ -37,13 +37,160 @@
           },
           {
             "result": {
-              "duration": 104000000,
+              "duration": 96000000,
               "status": "passed"
             },
             "line": 7,
             "name": "I have the option to book a room",
             "match": {
               "location": "features.step_definitions.BookingSteps.i_have_the_option_to_book_a_room()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@book"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-14T20:19:56.826Z",
+        "line": 10,
+        "name": "Calendar option to book dates is available on the page",
+        "description": "",
+        "id": "book-a-room;calendar-option-to-book-dates-is-available-on-the-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I have the option to book a room",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_have_the_option_to_book_a_room()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1407000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click the book button",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_click_the_book_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 559000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I have the calendar option to select the dates",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_have_the_calendar_option_to_select_the_dates()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@book"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-14T20:19:58.863Z",
+        "line": 16,
+        "name": "Booking the room for two days",
+        "description": "",
+        "id": "book-a-room;booking-the-room-for-two-days",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I have the calendar option to select the dates",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_have_the_calendar_option_to_select_the_dates()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2572000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I select two available dates on the calendar",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_select_two_available_dates_on_the_calendar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3326000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I fill in the customer details",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_fill_in_the_customer_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "LastName",
+                  "Email",
+                  "Phone"
+                ]
+              },
+              {
+                "cells": [
+                  "Prabu",
+                  "Nallavedi",
+                  "nprabusona@gmail.com",
+                  "919191919191"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 206000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I submit the booking",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_submit_the_booking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...24-02-02 - 2024-02-0[4]\u003e but was:\u003c...24-02-02 - 2024-02-0[5]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat pages.HomePage.assertSuccessfullBookingPopupAndMessage(HomePage.java:154)\n\tat features.step_definitions.BookingSteps.i_get_the_booking_successful_message_with_the_dates_booked(BookingSteps.java:58)\n\tat ✽.I get the booking successful message with the dates booked(file:///Users/prabunallavedi/Documents/BNPFortis/KATA_Testing_Java/src/test/java/features/booking.feature:23)\n",
+              "duration": 55714000000,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "I get the booking successful message with the dates booked",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_get_the_booking_successful_message_with_the_dates_booked()"
             },
             "keyword": "Then "
           }
